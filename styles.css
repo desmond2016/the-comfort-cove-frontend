@@ -1,0 +1,81 @@
+/* Additional custom styles beyond Tailwind */
+/* For animations and custom effects not easily done with Tailwind */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.chat-message {
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #38b2ea;
+  color: white;
+  border-top-right-radius: 0.25rem;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f1f5f9;
+  color: #334155;
+  border-top-left-radius: 0.25rem;
+  align-self: flex-start;
+}
+
+.category-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.scenario-option {
+  transition: background-color 0.3s;
+}
+
+.scenario-option:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+
+.quiz-option {
+  transition: border-color 0.3s;
+}
+
+.quiz-option:hover {
+  border-color: #38b2ea;
+}
+
+.quiz-option.selected {
+  border-color: #38b2ea;
+  background-color: #e0f2fe;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
